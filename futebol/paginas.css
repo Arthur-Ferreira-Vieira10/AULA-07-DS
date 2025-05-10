@@ -1,0 +1,63 @@
+@charset “UTF-8”;
+
+h1{
+	text-align: center;
+	font-family: 'bebas neue',sans-serif;
+	text-shadow: 2px 2px 4px #666; /* sombra preta para dar contraste */
+	color: darkred;
+}
+h2{
+
+  color: darkred;
+  text-align: center;
+  text-shadow: 2px 2px 4px #666; /* sombra preta */
+  font-family: 'Bebas Neue', sans-serif; 
+}
+p{
+	text-align: justify;
+	font-size: 20px;
+	color: black;
+}
+body{
+	background-image: url(fundo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.fotos img {
+  width: 400px;/* Largura fixa da imagem */
+  height: 300px;/* Altura fixa da imagem */
+  object-fit: cover; /* Faz a imagem "preencher" o espaço sem distorcer */
+  display: block;  /* Remove espaços em branco abaixo da imagem */
+  margin: 0 auto;  /* Centraliza a imagem na página */
+  border: 8px solid darkred;
+  border-radius: 10px;
+}
+
+
+#menu ul {
+  list-style: none; /* Remove os marcadores da lista (bolinhas padrão) */
+  padding: 1px; /* Define um pequeno espaçamento interno no menu */
+  margin: 50px; /* Espaçamento externo em todos os lados do menu */
+  display: flex; /* Coloca os itens da lista um ao lado do outro (horizontal) */
+  background-color: black; /* Cor de fundo verde escuro com transparência */
+  justify-content: center; /* Centraliza os itens dentro do menu */
+}
+
+#menu li {
+  margin: 0px; /* Remove o espaço entre os itens da lista */
+}
+
+#menu a {
+  display: block; /* Faz com que todo o bloco do link seja clicável */
+  padding: 50px 50px; /* Espaço interno nos links (30px em cima/baixo e laterais) */
+  color: #fff; /* Cor do texto dos links: branco */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Deixa o texto dos links em negrito */
+  font-family: arial; /* Usa a fonte Arial nos textos do menu */
+}
+
+#menu a:hover {
+  background-color: #fff; /* Quando o mouse passa por cima, muda o fundo para branco */
+  color: #0883798c; /* Muda a cor do texto para verde azulado com transparência */
+  border-radius: 5px; /* Arredonda os cantos do botão ao passar o mouse */
+}

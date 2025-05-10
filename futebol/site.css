@@ -1,0 +1,76 @@
+@charset “UTF-8”;
+
+h1{
+	text-align: center;
+	color: white;
+	font-family: 'bebas neue',sans-serif;
+	text-shadow: 2px 2px 4px #000; /* sombra preta para dar contraste */
+}
+h2 {
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000; /* sombra preta */
+  font-family: 'Bebas Neue', sans-serif; 
+}
+h3{
+  color: gold;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000; /* sombra preta */
+  font-family: 'Bebas Neue', sans-serif; 
+}
+
+
+p{
+	text-align: center;
+	font-size: 15px;
+}
+body{
+	background-image: url(fundo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; /* mantém o fundo fixo ao rolar */
+}
+body::before {
+  content: ""; /* cria uma camada vazia */
+  position: fixed; /* fixa no fundo da tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* fundo preto com 50% de transparência */
+  z-index: -1; /* fica atrás de todo o conteúdo */
+}
+
+img{
+	width: 300px;
+	height: 200px;
+}
+.galeria{
+	display: flex; /*transforma o contêiner em um flex container.*/
+  	justify-content: center; /* centraliza os itens */
+	gap: 40px; /* espaço entre as imagens */
+  	flex-wrap: wrap; /* para que fiquem em coluna em telas pequenas */
+  	margin-top: 20px; /*adiciona um espaço de 20px acima do containe*/
+}
+.galeria figure{
+	text-align: center;
+}
+.galeria img{
+  	border: 8px solid gold;;
+  	border-radius: 10px; /*Cantos Arrendodados*/
+  }
+
+ .bio{
+ 	text-align: center;
+ 	font-weight: bold; /*deixar em negrito */
+ 	font-size: 20px;
+ 	color: white; /* mais visível no fundo escuro */
+  	text-shadow: 1px 1px 2px black; /* melhora contraste */
+  	font-family: Arial, sans-serif;
+ }
+ .fim{
+ 	text-align: center;
+ 	color: white;
+ 	font-weight: bold;
+ }
